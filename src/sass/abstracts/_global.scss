@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+// _colors
+// _colors__primary
+$tomato: hsl(4, 100%, 67%);
+
+// _colors__neutral
+$white: hsl(0, 0%, 100%);
+$primary: hsl(234, 29%, 20%); //Pale Navy
+$accent: hsl(234, 17%, 26%); //Dark Navy or Dark Slate Grey
+$secondary: hsl(235, 18%, 26%);
+$vermillion: hsl(4, 100%, 67%);
+$gray-250: rgba(25, 24, 43, .2); 
+$gradient-100: linear-gradient(#FF6A3A, #FF527B);
+
+// _fonts
+// _fonts__family
+
+@mixin roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@mixin roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+

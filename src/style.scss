@@ -1,0 +1,133 @@
+@use "./sass/abstracts/" as *;
+@use "./sass/components/" as *;
+
+
+body {
+    @include roboto-regular;
+    background: $accent;
+}
+
+p {
+    @include roboto-regular;
+    font-size: 1rem;
+    color: $primary;
+    margin-block-end: 1.5rem;
+}
+ul {
+    margin-block-end: 2.5rem;
+}
+li {
+    display: inline-flex;
+    gap: 1rem;
+    margin-block-end: 10px;
+    svg {
+        min-width: 21px;
+        min-height: 21px;
+    }
+    &:last-child {
+        margin-block-end: 0;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    .form-label {
+        display: inline-flex;
+        justify-content: space-between;
+        font-size: .75rem;
+        @include roboto-bold;
+
+        margin-block-end: .5rem;
+    }
+
+    input[type="email"] {
+        @include roboto-regular;
+        color: $primary;
+
+        margin-block-end: 1.5rem;
+        padding: 1rem;
+        border: $accent solid 1px;
+        border-radius: .5rem;
+        outline: none;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+
+        &:hover, &:focus {
+            box-shadow: 0 1rem 2rem 0 $accent;
+        }
+    }
+}
+
+.error-message {
+    color: $vermillion;
+}
+
+.alert {
+    color: $vermillion !important;
+    border-color: $vermillion !important;
+    background-color: rgba(255, 97, 85, 0.5) !important;
+    &:hover, &:focus {
+        box-shadow: 0 1rem 2rem 0 $vermillion !important;
+    }
+}
+.isHidden {
+    display: none;
+}
+
+.primary-heading {
+    font-size: 3.5rem;
+    margin-block-end: 1.5rem;
+    @include roboto-bold;
+    @include media-query(40rem) {
+        font-size: 2.5rem;
+    }
+}
+
+.image-desktop {
+    float: right;
+}
+.image-mobile {
+    display: none;
+}
+@include media-query(40rem) {
+    .image-mobile {
+        display: block;
+        width: 100%;
+    }
+    .image-desktop {
+        display: none;
+    }
+}
+
+
+/* ------ */ 
+
+.success-container {
+    img {margin-block-end: 2.5rem;}
+    h2{
+        @include roboto-bold;
+        font-size: 3.5rem;
+        margin-block-end: 1.5rem;
+
+        @include media-query(40rem){
+            font-size: 2.5rem;
+        }
+    }
+    p {
+        @include media-query (40rem) {
+            margin-block-end: 16.4375rem; /* 263px*/
+        }
+    }
+}
+
+.attribution {
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    color: $primary;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

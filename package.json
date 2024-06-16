@@ -1,0 +1,17 @@
+{
+  "name": "newsletter-sign-up",
+  "version": "1.0.0",
+  "description": "Using this design file will help you practice building projects in the same way professionals do. Seeing the details in the design will help you improve your accuracy when building projects and build projects faster.",
+  "source": "index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "sass": "^1.77.5"
+  }
+}
