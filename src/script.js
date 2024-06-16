@@ -33,13 +33,13 @@ $(document).ready(function () {
   const isBlank = (inputId, errorId) => {
     $(`#${inputId}`).addClass("alert");
     $(`.${errorId}`).removeClass("isHidden");
-    $(`.${errorId}`).text("This field is required");
+    $(`.${errorId}`).text("Valid email required");
     $(`.${errorId}`).attr("aria-hidden", "false");
   };
   const notValid = (inputId, errorId) => {
     $(`#${inputId}`).addClass("alert");
     $(`.${errorId}`).removeClass("isHidden");
-    $(`.${errorId}`).text("Please enter a valid email address.");
+    $(`.${errorId}`).text("Please enter a valid email address");
     $(`.${errorId}`).attr("aria-hidden", "false");
   };
   const isValid = (inputId, errorId) => {
